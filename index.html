@@ -20,6 +20,7 @@
             height: 50px;
             display: flex;
             align-items: center;
+            position: absolute;
         }
 
         .menu ul {
@@ -37,8 +38,35 @@
             padding: 0 16px;
         }
 
-        
+        .menu a:hover {
 
+            color: burlywood;
+        }
+
+        .menu .submenu{
+
+            display: none;
+            position: absolute;
+            background-color: #2c2c2c;
+            min-width: 150px;
+            padding-top: 15px;
+        }
+
+        .menu li:hover .submenu{
+
+            display: block;
+        }
+
+        .menu li {
+
+            position: relative;
+        }
+
+        .menu .submenu a {
+
+            display: block;
+            padding: 10px 16px;
+        }
     </style>
 </head>
 
@@ -50,11 +78,34 @@
         <ul>
 
             <li><a href="index.html">Home</a></li>
-            <li><a href="pizzapage.html">Pizza</a></li>
+
+            <li>
+
+                <a href="#">Pizza</a>
+
+                <ul class="submenu">
+                    
+                    <li><a href="#">Recepten</a></li>
+                    <li><a href="pizzapage.html">Deeg</a></li>
+                    <li><a href="#">Tips</a></li>
+
+                </ul>
+            
+            </li>
+
+            
             <li><a href="#">Stoofgerechten</a></li>
+            
+            
             <li><a href="#">Grillen</a></li>
+            
+            
             <li><a href="#">Recepten</a></li>
+            
+            
             <li><a href="#">Tips</a></li>
+
+
 
         </ul>
     </nav>
